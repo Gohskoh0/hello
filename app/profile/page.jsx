@@ -1,0 +1,63 @@
+import Image from "next/image";
+
+export default function CompanyProfile() {
+    return (
+        <main className="min-h-screen bg-white">
+            <div className="bg-[#021526] h-auto md:h-[600px] flex flex-col md:flex-row justify-center gap-4">
+                <div className="mr-0 md:mr-12 text-center md:text-left">
+                    <div className="w-[200px] h-[200px] bg-white mt-12 md:mt-48 mx-auto md:ml-24">
+                        <Image width={199} height={199} src="/logo KE.png" />
+                    </div>
+                    <h1 className="text-white text-3xl md:text-5xl mt-4 md:mt-0 text-center w-full md:w-[400px] mb-2">
+                        Company Profile
+                    </h1>
+                    <p className="text-white text-lg md:ml-28">Kreenox Engineering</p>
+                </div>
+            </div>
+
+            <blockquote className="px-4 md:px-48 mt-16">
+                <div className="flex flex-col md:flex-row gap-8 md:gap-48 h-auto md:h-[450px]">
+                    <div className="flex justify-center md:block">
+                        <Image width={400} height={400} className="rounded-full" src="/uche pic.jpg" alt="" />
+                    </div>
+                    <div className="text-justify">
+                        <p className="text-black w-full md:w-[500px] h-auto md:h-[300px] leading-7">
+                            Kreeno Engineering LLC, A Wyoming registered company in U.S.A having a subsidiary company.Kreeno international Limited registered with Corperate Affair Commission in Nigeria, is on the foremost integrated Private investigators, secruity Automation: Protection and performance of Assets; Assets and Debts 
+                        </p>
+                    </div>
+                </div>
+
+                <div className="mb-8 text-justify">
+                    <p className="leading-7">
+                        experiences both in Engineering and Security. Humble, Gallant, Agility, owns a Bachelor of 
+                        Engineering in Electrical and Electronic Engineering. He graduated in 2007 with years of working 
+                        experience as a Manager in FES-FES Intl' with a lot of awards. He is currently nominated as Regions $ 
+                        Chapter Volunteer Leader ASIS Intl. He is also consulting for FNSIS. He is a registered member of the Nigeria 
+                        Society of Engineers with a License from the COREN Regulatory body. An active member of various 
+                        professional bodies, he believes in making a remarkable impact and is goal-oriented wherever he is found. He is also a team player who pays attention to colleagues and shares collective ideals, implementing them to achieve the organization’s objectives.
+                    </p>
+                </div>   
+            </blockquote>
+
+            <div className="bg-slate-100 h-auto py-16 px-4 sm:px-20 md:px-48 grid grid-cols-1 sm:grid-cols-2 gap-10">
+                <div className="w-full sm:w-[800px] mx-0 md:mx-48">
+                    <div className="px-16 sm:px-8 flex flex-col md:flex-row gap-8 md:gap-6 pb-16">
+                        <div>
+                            <Image width={250} height={250} className="rounded-full" src="/uche5.jpg" alt="" />
+                        </div>
+                        
+                        <div>
+                            <Image width={250} height={250} className="rounded-full" src="/uche 4.jpg" alt="" />
+                        </div>
+                        <div>
+                            <Image width={250} height={250} className="rounded-full" src="/uche 2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <h1 className="text-xl md:text-2xl text-center text-[#021526] mt-8">
+                    Among the Top 3 Global Winner. ASIS International Young Professionals Experience. (NextGen 2022)
+                    </h1>
+                </div>
+            </div>
+        </main>
+    );
+}
