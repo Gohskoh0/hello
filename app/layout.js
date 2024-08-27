@@ -1,9 +1,13 @@
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/nav";
 import Footer from "./components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Kanit({ 
+  subsets: ["latin"],
+  weight: "400"
+});
+  
 
 export const metadata = {
   title: "Kreeno Engineering",

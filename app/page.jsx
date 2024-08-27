@@ -2,9 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { GiAutoRepair } from "react-icons/gi";
-import { BsTelephone, BsDashLg } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import { IoMailUnread } from "react-icons/io5";
 import { GiEternalLove } from "react-icons/gi";
 import { CiMenuFries } from "react-icons/ci";
 
@@ -14,10 +12,10 @@ export default function HomePage() {
     useEffect(() => {
         const favicon = document.createElement('link');
         favicon.rel = 'icon';
-        favicon.href = 'logo KE.png'; // Adjust this path to where your favicon is located
+        favicon.href = '/logo KE.png';
         document.head.appendChild(favicon);
 
-        // Clean up by removing the favicon if the component is unmounted
+        
         return () => {
             document.head.removeChild(favicon);
         };
@@ -137,30 +135,22 @@ export default function HomePage() {
                 {/* Footer Section */}
                 <div className="bg-slate-50 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40 pt-8 pb-8 md:px-40 px-0 md:h-[400px] md:pt-16">
                     <div className="flex flex-col items-center md:items-start px-12">
-                        <img className="w-[50px] md:w-[70px] mt-2" src="/logo KE.png" alt="" />
-                        <p className="text-sm text-start md:text-start mt-4 w-full md:w-auto md:leading-7">
-                            Kreenox Engineering LLC, a Wyoming registered company in the USA, is a rapidly growing leader in the repair and maintenance of air conditioning systems and security cameras. 
+                        <img className="w-[50px] md:w-[90px] mt-2" src="/logo KE.png" alt="" />
+                        <p className="text-sm text-start md:text-start mt-4 w-full md:w-auto md:leading-6">
+                            Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance of air conditioning systems and security cameras. 
                             Our reputation is built on the trust of our clients, who rely on our expertise and commitment to quality service.
                         </p>
                     </div>
 
-                    <div className="flex flex-col border-t md:border-t-0 md:border-l border-slate-300 pt-10 md:pt-0 px-12 md:px-12 md:h-[250px]">
+                    <div className="flex flex-col border-t md:border-t-0 md:border-l border-slate-300 pt-10 md:pt-0 px-12 md:px-20 md:h-[250px]">
                         <p className="font-bold text-lg md:text-xl mb-4">For More Enquiries, Contact us</p>
                         <div className="flex items-center gap-2 mb-4">
-                            <BsTelephone />
-                            <p className="text-sm cursor-pointer">+234708 832 5000</p>
-                        </div>
-                        <div className="flex items-center gap-2 mb-4">
                             <img className="w-[20px] h-[20px]" src="/whatsapp.png icon.png" alt="WhatsApp" />
-                            <p className="text-sm cursor-pointer">+19179054481</p>
+                            <p className="text-sm cursor-pointer">+1(404)690-1367</p>
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                             <AiOutlineMail /> 
-                            <Link href="#"><p className="text-sm cursor-pointer">kreenoxenginerring@.com</p></Link>
-                        </div>
-                        <div className="flex items-center gap-2 mb-4"> 
-                            <IoMailUnread />
-                            <Link href="#"><p className="text-sm cursor-pointer">support@kreenoholdings.com</p></Link>
+                            <Link href="#"><p className="text-sm cursor-pointer">kreenoxenginerring@gmail.com</p></Link>
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                             <GiEternalLove />
