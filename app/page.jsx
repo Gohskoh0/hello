@@ -5,6 +5,7 @@ import { GiAutoRepair } from "react-icons/gi";
 import { AiOutlineMail } from "react-icons/ai";
 import { GiEternalLove } from "react-icons/gi";
 import { CiMenuFries } from "react-icons/ci";
+import { BsDashLg } from "react-icons/bs"; // Import the menu close icon
 
 export default function HomePage() {
     const [menuTab, setMenuTab] = useState(false);
@@ -15,7 +16,6 @@ export default function HomePage() {
         favicon.href = '/logo KE.png';
         document.head.appendChild(favicon);
 
-        
         return () => {
             document.head.removeChild(favicon);
         };
@@ -25,8 +25,8 @@ export default function HomePage() {
         <>
             <main className="bg-white min-h-screen">
                 {/* Navigation */}
-                <div className="flex justify-between items-start md:items-center mt-0 md:mt-[48px] pt-8 md:pt-4 h-[70px] py-4 md:py-0">
-                    <div className="text-2xl flex item-start md:items-center mx-0 px-12 md:px-40 md:mx-12 mt-0 md:mt-0">
+                <div className="flex justify-between items-center mt-0 md:mt-[48px] pt-8 md:pt-4 h-[70px] py-4 md:py-0">
+                    <div className="text-2xl flex items-center mx-0 px-4 md:px-40 md:mx-12">
                         <img src="/logo KE.png" alt="logo" className="w-[50px] md:w-[70px]" />
                     </div>
                     <div className="hidden md:flex flex-row gap-8 md:gap-16 text-[#021526] font-bold mr-0 md:mr-48">
@@ -43,11 +43,11 @@ export default function HomePage() {
                             <p className="hover:border-b-2 border-green-500 py-2">Contact Us</p>
                         </Link>
                     </div>
-                    <div className="flex md:hidden pr-4 md:pr-0">
+                    <div className="flex md:hidden pr-4">
                         {!menuTab ? (
-                            <CiMenuFries onClick={() => setMenuTab(true)} className="text-gray-400 text-3xl" />
+                            <CiMenuFries onClick={() => setMenuTab(true)} className="text-gray-400 text-3xl cursor-pointer" />
                         ) : (
-                            <BsDashLg onClick={() => setMenuTab(false)} className="text-gray-400 text-3xl" />
+                            <BsDashLg onClick={() => setMenuTab(false)} className="text-gray-400 text-3xl cursor-pointer" />
                         )}
                     </div>
                 </div>
@@ -65,8 +65,8 @@ export default function HomePage() {
                 {/* Hero Section */}
                 <div className="w-full flex flex-col items-center mb-0 pb-0">
                     <img className="w-full h-auto md:h-[750px] pt-6 md:pt-3" src="https://obuy.pk/wp-content/uploads/2021/07/IMG-3915-removebg-preview.png" alt="" />
-                    <div className="bg-blue-950 flex flex-col md:flex-row items-center md:items-start w-full px-0 md:px-40 py-9 md:py-8">
-                        <p className="text-white text-lg md:text-2xl text-center w-[400px] md:w-[950px] mb-4 md:mb-0">
+                    <div className="bg-blue-950 flex flex-col md:flex-row items-center md:items-start w-full px-4 md:px-40 py-9 md:py-8">
+                        <p className="text-white text-lg md:text-2xl text-center w-full md:w-[950px] mb-4 md:mb-0">
                             Looking For a Professional Air Condition and CCTV Cameras Repairer in U.S?
                         </p>
                         <div className="border border-white rounded-md h-[40px] md:h-[50px] w-[150px] md:w-[169px] hover:bg-green-600 bg-white text-center flex justify-center items-center ml-0 md:ml-14">
@@ -137,7 +137,8 @@ export default function HomePage() {
                     <div className="flex flex-col items-center md:items-start px-12">
                         <img className="w-[50px] md:w-[90px] mt-2" src="/logo KE.png" alt="" />
                         <p className="text-sm text-start md:text-start mt-4 w-full md:w-auto md:leading-6">
-                            Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance of air conditioning systems and Security Certification courses. 
+                            Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance 
+                            of air conditioning systems and Security Certification courses. 
                             Our reputation is built on the trust of our clients, who rely on our expertise and commitment to quality service.
                         </p>
                     </div>
@@ -157,7 +158,9 @@ export default function HomePage() {
                             <Link href="#"><p className="text-sm cursor-pointer">www.kreenoxenginerring.com</p></Link>
                         </div>
                     </div> 
+                    
                 </div>
+            
             </main>
         </>
     );
