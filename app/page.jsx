@@ -137,7 +137,7 @@ export default function HomePage() {
                     <div className="flex flex-col items-center md:items-start px-12">
                         <img className="w-[50px] md:w-[90px] mt-2" src="/logo KE.png" alt="" />
                         <p className="text-sm text-start md:text-start mt-4 w-full md:w-auto md:leading-6">
-                            Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance of air conditioning systems and security cameras. 
+                            Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance of air conditioning systems and Security Certification courses. 
                             Our reputation is built on the trust of our clients, who rely on our expertise and commitment to quality service.
                         </p>
                     </div>

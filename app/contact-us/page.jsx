@@ -25,7 +25,7 @@ export default function ContactInfo() {
                     </div>
                     <p className="text-xs md:text-sm mt-4 md:mt-6 leading-relaxed">
                             Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the
-                             repair and maintenance of air conditioning systems and security cameras. 
+                             repair and maintenance of air conditioning systems and Security Certification courses. 
                             Our reputation is built on the trust of our clients, who rely on our 
                             expertise and commitment to quality service.
                     </p>
