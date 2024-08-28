@@ -1,6 +1,21 @@
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 
+
 export default function CompanyProfile() {
+    useEffect(() => {
+        const favicon = document.createElement('link');
+        favicon.rel = 'icon';
+        favicon.href = '/logo KE.png';
+        document.head.appendChild(favicon);
+
+        
+        return () => {
+            document.head.removeChild(favicon);
+        };
+    }, []);
+
     return (
         <main className="min-h-screen bg-white">
             <div className="bg-[#021526] h-auto md:h-[600px] flex flex-col md:flex-row justify-center gap-4">
@@ -22,7 +37,16 @@ export default function CompanyProfile() {
                     </div>
                     <div className="text-justify">
                         <p className="text-black w-full md:w-[500px] h-auto md:h-[300px] leading-7">
-                            Kreeno Engineering LLC, A Wyoming registered company in U.S.A having a subsidiary company.Kreeno international Limited registered with Corperate Affair Commission in Nigeria, is on the foremost integrated Private investigators, secruity Automation: Protection and performance of Assets; Assets and Debts 
+                        Engr. Dr. Okpala Felix Uchenna is an outstanding expert who work assiduously to carve a niche for himself 
+                        ahead of many of his contemporaries in Security Industry. Has several  years of  experience in Electrical engineering, 
+                        Power Engineering, Management  Leadership qualities and Safety, 
+                        Security skills, has severed in different Industry, served in as Law Enforcement Agencies with remarkable Outstanding 
+                        acclaims and recommendations. Certified in Institutions of Security and Intelligent studies 
+                        Nigerian. Was elected as Chairperson Young Professional Committee ASIS International 
+                        Chapters 273 and a Liaison Council Member in YP ASIS.
+                        Has Doctorial Honors in Security and Intelligence Student from Embry Riddle Aeronautical 
+                        University Florida,USA. A fellow of Senior member in Security Forensics Studies. Has acquired vast 
+
                         </p>
                     </div>
                 </div>
