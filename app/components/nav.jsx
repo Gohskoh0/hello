@@ -20,7 +20,7 @@ export default function Navbar() {
 
                 {/* Contact Information */}
                 <div className="text-white flex flex-row gap-4 p-1 text-sm">
-                    <p>30 N Gould St Ste R, Sheridan, WY 82801, USA</p><br />
+                    <p>2401 Windy Hill Rd SE,30067 Marietta GA</p><br />
                     <p>Mon - Fri 8:00 - 5:00</p><br />
                     <p>+1(404)690-1367</p>
                 </div>

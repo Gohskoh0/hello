@@ -68,11 +68,11 @@ export default function Service() {
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                             <AiOutlineMail /> 
-                            <Link href="#"><p className="text-sm cursor-pointer">kreenoxenginerring@gmail.com</p></Link>
+                            <Link href="#"><p className="text-sm cursor-pointer">kreenoxengineering@gmail.com</p></Link>
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                             <GiEternalLove />
-                            <Link href="#"><p className="text-sm cursor-pointer">www.kreenoxenginerring.com</p></Link>
+                            <Link href="#"><p className="text-sm cursor-pointer">www.kreenoxengineering.com</p></Link>
                         </div>
                     </div> 
                 </div>

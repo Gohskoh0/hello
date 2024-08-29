@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from "react";
-import { GiEternalLove } from 'react-icons/gi'; // Importing the GiEternalLove icon
-import Link from 'next/link'; // Importing Link component from Next.js
+import { GiEternalLove } from 'react-icons/gi'; 
+import Link from 'next/link'; 
 
 export default function ContactInfo() {
     useEffect(() => {
@@ -44,13 +44,13 @@ export default function ContactInfo() {
                         <div className="flex items-center gap-2 mt-4">
                             <GiEternalLove />
                             <Link href="#">
-                                <p className="text-xs md:text-sm cursor-pointer">kreenoxenginerring@gmail.com</p>
+                                <p className="text-xs md:text-sm cursor-pointer">kreenoxengineering@gmail.com</p>
                             </Link>
                         </div>
                         <div className="flex items-center gap-2 mt-4">
                             <GiEternalLove />
                             <Link href="#">
-                                <p className="text-xs md:text-sm cursor-pointer">www.kreenoholdings.com</p>
+                                <p className="text-xs md:text-sm cursor-pointer">www.kreenoxengineering.com</p>
                             </Link>
                         </div>
                     </div>
