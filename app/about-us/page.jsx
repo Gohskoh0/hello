@@ -35,7 +35,7 @@ export default function AboutUs() {
                     <h1 className="text-2xl md:text-6xl text-white md:w-[600px]">Get to know About who we are..</h1>
                     <p className="text-[#021526] text-xl md:text-3xl text-white mt-6">Mission</p>
                     <p className="text-white text-base md:text-2xl mt-3 md:mt-6 md:w-[600px]">
-                        Growing organically through careful planning and rightful application of sound business principles. At Kreenox, we believe that the only way to discover the limits of the possible is to go beyond the impossible. To become the foremost integrated security and business solution company in Africa.
+                        Growing organically through careful planning and rightful application of sound business principles. At Kreenox, we believe that the only way to discover the limits of the possible is to go beyond the impossible. To become the foremost integrated security and business solution company in the United Statess.
                     </p>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function AboutUs() {
                     <div className="flex flex-col">
                         <p className="text-2xl md:text-3xl text-[#021526] w-full md:w-[500px]">Our Vision</p>
                         <p className="text-[#021526] text-base md:text-lg mt-4 md:mt-8 md:w-[500px] leading-7">
-                            To become the foremost integrated security company and business solutions provider in Africa, offering innovative, reliable, and comprehensive services that empower our clients to achieve their goals with confidence. We are committed to setting new standards in security and business solutions through cutting-edge technology, exceptional customer service, and a deep understanding of our clients' unique needs. Our vision is to be the trusted partner for businesses across the continent, delivering solutions that drive growth, enhance security, and ensure long-term success.
+                            To become the foremost integrated security company and business solutions provider in United States, offering innovative, reliable, and comprehensive services that empower our clients to achieve their goals with confidence. We are committed to setting new standards in security and business solutions through cutting-edge technology, exceptional customer service, and a deep understanding of our clients' unique needs. Our vision is to be the trusted partner for businesses across the continent, delivering solutions that drive growth, enhance security, and ensure long-term success.
                         </p>
                     </div>
                     <div className="flex justify-center md:block pb-8 md:pb-0">
