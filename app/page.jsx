@@ -67,7 +67,7 @@ export default function HomePage() {
                     <img className="w-full h-auto md:h-[750px] pt-6 md:pt-3" src="https://obuy.pk/wp-content/uploads/2021/07/IMG-3915-removebg-preview.png" alt="" />
                     <div className="bg-blue-950 flex flex-col md:flex-row items-center md:items-start w-full px-4 md:px-40 py-9 md:py-8">
                         <p className="text-white text-lg md:text-2xl text-center w-full md:w-[950px] mb-4 md:mb-0">
-                            Looking For a Professional Air Condition and CCTV Cameras Repairer in U.S?
+                            Looking For a Professional Air Condition and CCTV Cameras Repairer and Electrical Appliances Installation in U.S?
                         </p>
                         <div className="border border-white rounded-md h-[40px] md:h-[50px] w-[150px] md:w-[169px] hover:bg-green-600 bg-white text-center flex justify-center items-center ml-0 md:ml-14">
                             <Link href="/profile">
@@ -81,7 +81,7 @@ export default function HomePage() {
                 <div className="px-4 md:px-28 py-20 bg-slate-200 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
                     <div className="text-start md:mr-12 md:px-12">
                         <p className="text-3xl md:text-5xl text-blue-950">Welcome!</p>
-                        <p className="text-2xl md:text-3xl text-green-600 mt-4">Kreenox Engineering</p>
+                        <p className="text-2xl md:text-3xl text-green-600 mt-4">Kreenox Engineering & Security Consultancy</p>
                         <p className="text-sm md:text-base mt-4 w-full md:w-auto">
                             Welcome to Kreenox Engineering, your trusted partner in heating system repairs,
                             specializing in air conditioning and CCTV cameras. With our expertise, we provide top-notch repair services,
@@ -96,7 +96,7 @@ export default function HomePage() {
                 {/* Services Section */}
                 <div className="p-4 bg-white py-16">
                     <div className="text-center">
-                        <p className="text-2xl md:text-4xl">Repair of Air Condition AC</p>
+                        <p className="text-2xl md:text-4xl">Repairs and Installation of AC and Electrical Appliances</p>
                         <p className="text-sm md:text-lg w-full max-w-2xl mx-auto mt-4">
                             We have invested significant time and resources to offer premium air conditioning repair services tailored for discerning clients.
                         </p>
@@ -114,7 +114,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="text-center mt-16">
-                        <p className="text-2xl md:text-4xl">Repair of Security Cameras</p>
+                        <p className="text-2xl md:text-4xl">Repair and Installation of Security Cameras</p>
                         <p className="text-sm md:text-lg w-full max-w-2xl mx-auto mt-4">
                             We have dedicated substantial time and resources to developing specialized repair services for CCTV cameras.
                         </p>
