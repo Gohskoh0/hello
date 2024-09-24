@@ -68,10 +68,12 @@ export default function CompanyProfile() {
                     <div className="px-16 sm:px-8 flex flex-col md:flex-row gap-8 md:gap-6 pb-16">
                         <div>
                             <Image width={250} height={250} className="rounded-full" src="/uche5.jpg" alt="" />
+                            <p>CEO Kreenox Engineering with staff of Patrol Management team analysing trending Technology devices display template</p>
                         </div>
                         
                         <div>
                             <Image width={250} height={250} className="rounded-full" src="/uche 4.jpg" alt="" />
+                            <p>President of Evolutz/ Suzanna Alsayed.Author/ CEO</p>
                         </div>
                         <div>
                             <Image width={250} height={250} className="rounded-full" src="/uche 2.jpg" alt="" />
