@@ -79,11 +79,15 @@ export default function CompanyProfile() {
                     </div>
                     <div className="px-16 sm:px-8 flex flex-col md:flex-row gap-8 md:gap-6 pb-16">
                         <div>
-                            <p>CEO Kreenox Engineering with staff of Patrol Management team analysing trending Technology devices display template</p>
+                            <p>CEO Kreenox Engineering with 
+                                Staff of Patrol Management team 
+                                analysing trending Technology devices
+                                display template</p>
                         </div>
                         
                         <div>
-                            <p>President of Evolutz/ Suzanna Alsayed.Author/ CEO</p>
+                            <p>President of Evolutz/ 
+                                Suzanna Alsayed.Author/ CEO</p>
                         </div>
                     </div>
                     <h1 className="text-xl md:text-2xl text-center text-[#021526] mt-8">
