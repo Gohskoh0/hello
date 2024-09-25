@@ -1,56 +1,62 @@
-"use client"; // Add this at the top
+"use client";
 
-import { useState, useEffect } from 'react';
-import MediaSection from '../components/MediaSection';  // Adjust import path if needed
+import { useState } from 'react';
 
-export default function Home() {
-  const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState('');
-  
-  // Fetch comments from localStorage on page load
-  useEffect(() => {
-    const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
-    setComments(storedComments);
-  }, []);
-  
-  // Save comment to localStorage
-  const addComment = () => {
-    if (newComment.trim() === '') return;
-    const updatedComments = [...comments, newComment];
-    setComments(updatedComments);
-    localStorage.setItem('comments', JSON.stringify(updatedComments));
-    setNewComment('');
+export default function BlogPage() {
+  const [newPost, setNewPost] = useState('');
+  const [newMedia, setNewMedia] = useState(null);
+  const [responseMessage, setResponseMessage] = useState('');
+
+  const handlePostSubmit = async () => {
+    if (!newPost && !newMedia) return;
+
+    // Create form data to send the post content and media
+    const formData = new FormData();
+    formData.append('postContent', newPost);
+    if (newMedia) {
+      formData.append('media', newMedia);
+    }
+
+    // Send the post data to the API
+    try {
+      const response = await fetch('/api/savePost', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setResponseMessage('Post and media saved successfully!');
+        setNewPost('');
+        setNewMedia(null);
+      } else {
+        setResponseMessage('Error saving post.');
+      }
+    } catch (error) {
+      setResponseMessage('Error saving post.');
+    }
   };
 
   return (
     <div style={styles.container}>
-      <h1>Welcome to the Blog</h1>
-      <div style={styles.postContainer}>
-        <h2>Blog Post Title</h2>
-        <p>This is a sample blog post content.</p>
-        <MediaSection />
-      </div>
+      <h1>Community Blog</h1>
 
-      <div style={styles.commentSection}>
-        <h3>Comments</h3>
-        <div style={styles.commentBox}>
-          {comments.length > 0 ? (
-            comments.map((comment, index) => (
-              <p key={index} style={styles.comment}>{comment}</p>
-            ))
-          ) : (
-            <p>No comments yet. Be the first to comment!</p>
-          )}
-        </div>
-
-        <input
-          type="text"
-          value={newComment}
-          onChange={(e) => setNewComment(e.target.value)}
-          placeholder="Add your comment"
-          style={styles.commentInput}
+      <div style={styles.newPostSection}>
+        <textarea
+          value={newPost}
+          onChange={(e) => setNewPost(e.target.value)}
+          placeholder="Write your article..."
+          style={styles.textarea}
         />
-        <button onClick={addComment} style={styles.addButton}>Add Comment</button>
+        <input
+          type="file"
+          onChange={(e) => setNewMedia(e.target.files[0])}
+          accept="image/*"
+          style={styles.fileInput}
+        />
+        <button onClick={handlePostSubmit} style={styles.postButton}>
+          Post Article
+        </button>
+        {responseMessage && <p>{responseMessage}</p>}
       </div>
     </div>
   );
@@ -58,47 +64,31 @@ export default function Home() {
 
 const styles = {
   container: {
-    width: '80%',
+    maxWidth: '800px',
     margin: '0 auto',
     fontFamily: 'Arial, sans-serif',
   },
-  postContainer: {
-    backgroundColor: '#f4f4f4',
-    padding: '20px',
-    borderRadius: '8px',
+  newPostSection: {
     marginBottom: '20px',
   },
-  commentSection: {
-    backgroundColor: '#e0e0e0',
-    padding: '15px',
-    borderRadius: '8px',
-  },
-  commentBox: {
-    backgroundColor: '#fff',
+  textarea: {
+    width: '100%',
+    height: '100px',
+    marginBottom: '10px',
     padding: '10px',
     borderRadius: '5px',
-    minHeight: '100px',
-    marginBottom: '10px',
-  },
-  comment: {
-    backgroundColor: '#f9f9f9',
-    padding: '10px',
-    borderRadius: '4px',
-    marginBottom: '5px',
-  },
-  commentInput: {
-    width: '100%',
-    padding: '10px',
-    marginBottom: '10px',
-    borderRadius: '4px',
     border: '1px solid #ccc',
   },
-  addButton: {
-    padding: '10px 20px',
+  fileInput: {
+    display: 'block',
+    marginBottom: '10px',
+  },
+  postButton: {
+    padding: '10px 15px',
     backgroundColor: '#0070f3',
     color: '#fff',
     border: 'none',
-    borderRadius: '4px',
+    borderRadius: '5px',
     cursor: 'pointer',
-  }
+  },
 };
