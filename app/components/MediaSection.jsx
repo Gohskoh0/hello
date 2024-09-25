@@ -1,6 +1,6 @@
-"use client"; // Add this at the top
+"use client";  // Ensure the component is client-side
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function MediaSection() {
   const [media, setMedia] = useState(null);
@@ -13,15 +13,16 @@ export default function MediaSection() {
     }
   };
 
-  const checkRole = () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const roleParam = urlParams.get('role');
-    setRole(roleParam);
-  };
+  useEffect(() => {
+    // Code accessing 'window' must be inside useEffect
+    const checkRole = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const roleParam = urlParams.get('role');
+      setRole(roleParam || '');
+    };
 
-  useState(() => {
     checkRole();
-  }, []);
+  }, []); // Empty dependency array ensures this only runs on the client
 
   return (
     <div style={styles.mediaSection}>
@@ -46,5 +47,5 @@ const styles = {
     maxWidth: '100%',
     height: 'auto',
     borderRadius: '8px',
-  }
+  },
 };
