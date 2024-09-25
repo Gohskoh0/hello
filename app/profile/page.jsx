@@ -81,12 +81,12 @@ export default function CompanyProfile() {
                         <div>
                             <p>CEO Kreenox Engineering with <br />
                                 Staff of Patrol Management team <br />
-                                analysing trending Technology devices<br />
-                                display template</p>
+                                analysing trending Technology <br />
+                                device display templates</p>
                         </div>
                         
                         <div>
-                            <p>President of Evolutz/ 
+                            <p>President of Evolutz/<br /> 
                                 Suzanna Alsayed.Author/ CEO</p>
                         </div>
                     </div>
