@@ -1,7 +1,7 @@
 "use client"; // Add this at the top
 
 import { useState, useEffect } from 'react';
-import MediaSection from '../../components/MediaSection';  // Adjust import path if needed
+import MediaSection from '/components/MediaSection';  // Adjust import path if needed
 
 export default function Home() {
   const [comments, setComments] = useState([]);
