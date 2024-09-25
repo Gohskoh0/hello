@@ -10,14 +10,12 @@ export default function BlogPage() {
   const handlePostSubmit = async () => {
     if (!newPost && !newMedia) return;
 
-    // Create form data to send the post content and media
     const formData = new FormData();
     formData.append('postContent', newPost);
     if (newMedia) {
       formData.append('media', newMedia);
     }
 
-    // Send the post data to the API
     try {
       const response = await fetch('/api/savePost', {
         method: 'POST',
@@ -65,10 +63,9 @@ export default function BlogPage() {
 const styles = {
   container: {
     maxWidth: '800px',
-    margin: '0 auto',
-    maxHieght: '70%',
-    maiginTop: '50px',
+    margin: '50px auto',
     fontFamily: 'Arial, sans-serif',
+    textAlign: 'center',
   },
   newPostSection: {
     marginBottom: '20px',
@@ -80,10 +77,11 @@ const styles = {
     padding: '10px',
     borderRadius: '5px',
     border: '1px solid #ccc',
+    resize: 'vertical',
   },
   fileInput: {
     display: 'block',
-    marginBottom: '10px',
+    margin: '10px auto',
   },
   postButton: {
     padding: '10px 15px',
