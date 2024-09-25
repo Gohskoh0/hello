@@ -81,9 +81,9 @@ export default function HomePage() {
                 <div className="px-4 md:px-28 py-20 bg-slate-200 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
                     <div className="text-start md:mr-12 md:px-12">
                         <p className="text-3xl md:text-5xl text-blue-950">Welcome!</p>
-                        <p className="text-2xl md:text-3xl text-green-600 mt-4">Kreenox Engineering & Security Consultancy</p>
+                        <p className="text-2xl md:text-3xl text-green-600 mt-4">kreenox Engineering & Security Consultancy</p>
                         <p className="text-sm md:text-base mt-4 w-full md:w-auto">
-                            Welcome to Kreenox Engineering, your trusted partner in heating system repairs,
+                            Welcome to kreenox Engineering, your trusted partner in heating system repairs,
                             specializing in air conditioning and CCTV cameras. With our expertise, we provide top-notch repair services,
                             ensuring your systems are running smoothly and efficiently...
                         </p>
@@ -108,7 +108,7 @@ export default function HomePage() {
                     <div className="flex flex-col md:flex-row gap-4 items-center mt-10 px-4 md:px-48">
                         <GiAutoRepair className="text-5xl md:text-8xl text-blue-950" />
                         <p className="border-l border-gray-200 pl-4 md:pl-10 mt-4 md:mt-0">
-                            At Kreenox Engineering, we understand how crucial a reliable air conditioning system is to your comfort and well-being. 
+                            At kreenox Engineering, we understand how crucial a reliable air conditioning system is to your comfort and well-being. 
                             That's why we've dedicated substantial time and resources to developing top-tier AC repair services.
                         </p>
                     </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
                     <div className="flex flex-col items-center md:items-start px-12">
                         <img className="w-[50px] md:w-[90px] mt-2" src="/logo KE.png" alt="" />
                         <p className="text-sm text-start md:text-start mt-4 w-full md:w-auto md:leading-6">
-                            Kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance 
+                            kreenox Engineering LLC, a Georgia registered company in the USA, is a rapidly growing leader in the repair and maintenance 
                             of air conditioning systems and Security Certification courses. 
                             Our reputation is built on the trust of our clients, who rely on our expertise and commitment to quality service.
                         </p>
@@ -151,11 +151,11 @@ export default function HomePage() {
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                             <AiOutlineMail /> 
-                            <Link href="#"><p className="text-sm cursor-pointer">kreenoxengineering@gmail.com</p></Link>
+                            <Link href="#"><p className="text-sm cursor-pointer">kreenox engineering@gmail.com</p></Link>
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                             <GiEternalLove />
-                            <Link href="#"><p className="text-sm cursor-pointer">www.kreenoxengineering.com</p></Link>
+                            <Link href="#"><p className="text-sm cursor-pointer">www.kreenox engineering.com</p></Link>
                         </div>
                     </div> 
                     
