@@ -79,9 +79,9 @@ export default function CompanyProfile() {
                     </div>
                     <div className="px-16 sm:px-8 flex flex-col md:flex-row gap-8 md:gap-6 pb-16">
                         <div>
-                            <p>CEO Kreenox Engineering with 
-                                Staff of Patrol Management team 
-                                analysing trending Technology devices
+                            <p>CEO Kreenox Engineering with <br />
+                                Staff of Patrol Management team <br />
+                                analysing trending Technology devices<br />
                                 display template</p>
                         </div>
                         
