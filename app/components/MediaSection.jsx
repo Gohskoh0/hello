@@ -1,3 +1,5 @@
+"use client";  // Add this line at the very top of the file
+
 import { useState } from 'react';
 
 export default function MediaSection() {
