@@ -1,16 +1,19 @@
-"use client";  // Add this at the very top of the file
+"use client"; // Add this at the top
 
 import { useState, useEffect } from 'react';
+import MediaSection from './components/MediaSection';  // Adjust import path if needed
 
 export default function Home() {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
-
+  
+  // Fetch comments from localStorage on page load
   useEffect(() => {
     const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
     setComments(storedComments);
   }, []);
-
+  
+  // Save comment to localStorage
   const addComment = () => {
     if (newComment.trim() === '') return;
     const updatedComments = [...comments, newComment];
