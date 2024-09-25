@@ -72,7 +72,7 @@ const styles = {
   },
   textarea: {
     width: '100%',
-    height: '500px',
+    height: '250px',
     marginBottom: '10px',
     padding: '10px',
     borderRadius: '5px',
