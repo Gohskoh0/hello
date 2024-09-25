@@ -66,6 +66,8 @@ const styles = {
   container: {
     maxWidth: '800px',
     margin: '0 auto',
+    maxHieght: '70%',
+    maiginTop: '50px',
     fontFamily: 'Arial, sans-serif',
   },
   newPostSection: {
