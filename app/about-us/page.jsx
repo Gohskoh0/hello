@@ -39,7 +39,7 @@ export default function AboutUs() {
                         Growing organically through careful planning and rightful application of sound business principles. At Kreenox, we believe that the only way to discover the limits of the possible is to go beyond the impossible. To become the foremost integrated security and business solution company in the United Statess.
                     </p>
                     <p className="text-[#021526] text-xl md:text-3xl text-white mt-6">Company Overview</p>
-                    <p>My company will focus on providing electrical engineering solutions for commercial, industrial, and residential clients across the United States. The services will include:
+                    <p p className="text-white text-base md:text-2xl mt-3 md:mt-6 md:w-[600px]">We focus on providing electrical engineering solutions for commercial, industrial, and residential clients across the United States. The services will include:
 <br />• Electrical system design and installation
 <br />• Energy-efficient lighting and automation systems
 <br />• Renewable energy solutions (solar power systems)
