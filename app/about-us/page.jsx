@@ -40,13 +40,13 @@ export default function AboutUs() {
                     </p>
                     <p className="text-[#021526] text-xl md:text-3xl text-white mt-6">Company Overview</p>
                     <p>My company will focus on providing electrical engineering solutions for commercial, industrial, and residential clients across the United States. The services will include:
-• Electrical system design and installation
-• Energy-efficient lighting and automation systems
-• Renewable energy solutions (solar power systems)
-• Smart home and building automation
-• Electrical safety and compliance consulting
-• Security systems design and implementation or
-• Cloud-based electrical and data solutions</p>
+<br />• Electrical system design and installation
+<br />• Energy-efficient lighting and automation systems
+<br />• Renewable energy solutions (solar power systems)
+<br />• Smart home and building automation
+<br />• Electrical safety and compliance consulting
+<br />• Security systems design and implementation or
+<br />• Cloud-based electrical and data solutions</p>
                 </div>
             </div>
 
