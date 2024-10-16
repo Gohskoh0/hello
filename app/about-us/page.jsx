@@ -25,7 +25,8 @@ export default function AboutUs() {
                     <p className="text-[#021526] text-xl md:text-3xl font-bold">About our company</p>
                     <p className="text-sky-500 text-2xl md:text-5xl font-bold w-full md:w-[600px] mt-4">We help repair and maintain heating systems</p>
                     <p className="text-[#021526] w-full md:w-[700px] mt-4">
-                        <span className="text-[#021526] font-bold">Kreenox Engineering</span> is a company committed to delivering efficient and future-ready heating system solutions. We focus on providing cost-effective, reliable repairs that meet today's needs while being adaptable for future enhancements.
+                        <span className="text-[#021526] font-bold">Kreenox Engineering</span> is a company committed to delivering efficient and future-ready heating system solutions. 
+                        We focus on providing cost-effective, reliable repairs that meet today's needs while being adaptable for future enhancements.
                     </p>
                 </div>
             </section>
@@ -37,6 +38,15 @@ export default function AboutUs() {
                     <p className="text-white text-base md:text-2xl mt-3 md:mt-6 md:w-[600px]">
                         Growing organically through careful planning and rightful application of sound business principles. At Kreenox, we believe that the only way to discover the limits of the possible is to go beyond the impossible. To become the foremost integrated security and business solution company in the United Statess.
                     </p>
+                    <p className="text-[#021526] text-xl md:text-3xl text-white mt-6">Company Overview</p>
+                    <p>My company will focus on providing electrical engineering solutions for commercial, industrial, and residential clients across the United States. The services will include:
+• Electrical system design and installation
+• Energy-efficient lighting and automation systems
+• Renewable energy solutions (solar power systems)
+• Smart home and building automation
+• Electrical safety and compliance consulting
+• Security systems design and implementation or
+• Cloud-based electrical and data solutions</p>
                 </div>
             </div>
 
